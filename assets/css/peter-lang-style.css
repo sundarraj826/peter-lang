@@ -6,6 +6,19 @@ body {
   color: #2a2a37;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: rgba(123, 128, 171, 0.15);
+          box-shadow: rgba(123, 128, 171, 0.15);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #202879;
+}
+
 .peter-lang-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +257,7 @@ body {
   width: 135px;
   height: 120px;
   display: table;
+  margin: 0 20px;
 }
 
 .peter-lang-wrapper .contract-left .nav-item .nav-link {
