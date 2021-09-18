@@ -1,0 +1,6 @@
+header, #navigation-menu, #content, footer{
+	position: relative;
+}
+#content section {
+	min-height: 500px;
+}
