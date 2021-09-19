@@ -7,3 +7,12 @@
         });
     });
 })(jQuery);
+
+//upload table script
+$(document).ready(function() {
+    $('#peter-lang-table').DataTable({
+        "paging": false,
+        "info": false,
+        "searching": false
+    });
+} );

@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -273,6 +274,132 @@ body{
                 color: $gray-color;
                 font-size: 14px;
                 margin: 0;
+            }
+        }
+    }
+    .upload-wrap {
+        padding: 20px 35px;
+        .upload-left{
+            color: $primary-color;
+            margin: 0 100px 0 0;
+            .form-group{
+                margin: 30px 0 0;
+            }
+            textarea{
+                resize: none;
+            }
+        }
+        .upload-inst{
+            background: rgba(251, 251, 255, 1);
+            border: 1px solid $border-color;
+            padding: 15px 25px;
+            box-shadow: 3px 16px 17px -12px rgba(0, 0, 0, 0.11);
+            h1{
+                color: $primary-color;
+                margin:0 0 10px !important;
+            }
+        }
+        .upload-inst-btn{
+            @include btnPrimary;
+        }
+        #peter-lang-table{
+            margin: 35px 0 0;
+            border-bottom: none;
+            border-spacing: 0 4px!important;
+            thead{
+                background: #FFFFFF;
+                box-shadow: 0px 0px 5px -1px rgba(0,0,0, 0.2);
+            }
+            th{
+                border-bottom: none;
+            }
+            .odd{
+                background: $right-bg;
+                .sorting_1{
+                    background: $right-bg;
+                }
+            }
+            .even, .sorting_1{
+                background:#EBECF3;
+            }
+        }
+    }
+    .login-wrap {
+        width: 100%;
+        padding: 20px 25px;
+        .login-left {
+            width: 310px;
+            margin: 40px auto 0;
+            h1{
+                font-weight: map-get($font-weight, "bold" );
+                font-size: 22px;
+                color: $primary-color;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 0 0 100px;
+            }
+        }
+        .logi-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            opacity: 0.1;
+        }
+    }
+    .login-logo{
+        width:120px;
+    }
+    .form-log-wrap {
+        .valide-btn{
+            @include btnPrimary;
+            text-transform: uppercase;
+        }
+        .forgot{
+            text-align: right;
+            margin: 10px 0 0;
+            a{
+                color: $gray-color;
+            }
+        }
+        .sign-up-text {
+            margin: 100px 0 0;
+            text-align: center;
+            a{
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: map-get($font-weight, "bold" );
+            }
+        }
+    }
+    .signup-right {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::before{
+            content: '';
+            width: 1px;
+            height: 100%;
+            background: $gray-color;
+            position:absolute;
+            left: 0;
+            opacity: 0.2;
+        }
+        &::after{
+            content: 'Or';
+            position: absolute;
+            left: -6px;
+            background: $bg-white;
+            padding: 10px 0;
+        }
+        .gmail{
+            padding: 10px;
+            border: 1px solid #C7CFE3;
+            margin: 0 0 25px;
+            a{
+                color: #C7CFE3;
             }
         }
     }

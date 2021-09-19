@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css"/>
     <link href="assets/css/peter-lang-style.css" rel="stylesheet"/>
 </head>
 
@@ -399,7 +400,66 @@
                 </section>
                 <section id="section-5">
                      <div class="covers-wrap">
-                         
+                         <div class="upload-wrap">
+                             <div class="container-fluid">
+                                 <div class="row">
+                                     <div class="col-sm-6">
+                                        <div class="upload-left">
+                                            <h1>upload</h1>
+                                            <div class="form-group">
+                                                <label for="assetdescription">Assest Description</label>
+                                                <textarea name="assetdescription" id="assetdescription" class="form-control"></textarea>
+                                                
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="file" class="form-control-file" id="file-upload">
+                                              </div>
+                                        </div> 
+                                     </div>
+                                     <div class="col-sm-6">
+                                         <div class="upload-right">
+                                            <div class="upload-inst">
+                                                <h1>upload instruction</h1>
+                                                <p>Manuscripts and other documents required for the proof creation process needs to be packaged as .zip file format. Upload them using the Upload button. Other file formats allowed are .doc, .docx, .PDF.</p>
+                                                <p>If a file size exceeds 8 MB, please upload them as seperate files.
+                                                    Click on 'Finalize Upload' button once all your manuscript and other documents / assets are attached.</p>
+                                            </div>
+                                            <button class="btn btn-primary upload-inst-btn">Finalize Upload</button>
+                                           
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <table id="peter-lang-table" class="display" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Uploaded Date</th>
+                                        <th>File Name</th>
+                                        <th>View </th>
+                                        <th>Delete</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>23-Aug-21</td>
+                                        <td>File Name</td>
+                                        <td><img src="assets/images/AddFile.svg" /></td>
+                                        <td>Delete</td>
+                                        <td>Manuscripts and other documents required</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td>23-Aug-21</td>
+                                        <td>File Name</td>
+                                        <td><img src="assets/images/AddFile.svg" /></td>
+                                        <td>Delete</td>
+                                        <td>Manuscripts and other documents required</td>
+                                       
+                                    </tr>
+                                    </tbody>
+                            </table>
+                         </div>
                      </div>
                 </section>
             </div>
@@ -413,6 +473,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<!-- Page Scroll to id plugin -->
 	<script src="assets/js/jquery.malihu.PageScroll2id.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
 	<script src="assets/js/peter-custom.js"></script>
 </body>
 </html>
